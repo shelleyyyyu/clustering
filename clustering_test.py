@@ -38,7 +38,7 @@ import matplotlib.pyplot as plt
 
 """### Loading the Data"""
 
-path = r'../Articles' #Add the path to Articles folder
+path = r'./Articles' #Add the path to Articles folder
 seed = 137 #Seed value
 
 # def load_data(path,seed):
@@ -54,7 +54,7 @@ seed = 137 #Seed value
 
 def load_data(path,seed):
   train_texts = []
-  with open('../Articles/ARMY_SPO.20210317.clean.filtered','r', encoding='utf-8') as f:
+  with open('./Articles/ARMY_SPO.20210317.clean.filtered','r', encoding='utf-8') as f:
       data = f.readlines()
       for d in data:
           train_texts.append(d.strip().split('\t')[0].replace('_', ' '))
